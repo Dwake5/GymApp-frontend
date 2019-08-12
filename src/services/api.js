@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:3000'
+// const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://gymapp-backend.herokuapp.com'
 const signinUrl = baseUrl + '/signin'
 const validateUrl = baseUrl + '/validate'
 const signupUrl = baseUrl + '/signup'

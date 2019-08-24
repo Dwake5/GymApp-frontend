@@ -93,13 +93,13 @@ class UserDetails extends Component {
             <div>
                 {name ? <h1> {this.capitalize(name)} </h1> : null }
                 {img ? <img src={img} id='profilePic' width="250" alt=""/> : <img src={anon} id='profilePic' width="250" alt=""/> }
+                {gender ? <p> Gender: {gender} </p> : null   }
+                {goal ? <p> Main goal: {goal} </p> : null }
                 {height ? <p> Height (in cm's): {height}</p> : null }
                 {weight ? <p> Weight (in pounds): {weight} </p> : <p>Submit your first weight in <Link to='/bodyWeight'>Body weights</Link> to see it here </p>}
                 {height && weight ? <p> BMI: {bmi.toFixed(2)} </p> : null  }
                 {height && weight ? <p> BMI feedback: {this.bmiFeedback(bmi)}</p> : null }
-                {gender ? <p> Gender: {gender} </p> : null   }
                 {height && weight ? <p>{this.changeBmi(bmi)} </p> : null }
-                {goal ? <p> Main goal: {goal} </p> : null }
                 {bodyType ? <p> Body type: {bodyType}</p> : null }
                 <br />
             </div>

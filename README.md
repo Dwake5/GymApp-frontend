@@ -7,7 +7,7 @@ Its sister project can be found at <a href="https://github.com/Dwake5/GymApp-bck
 
 <a href="https://kratos-gym-app.herokuapp.com">Now deployed on heroku!</a>
 
-This was a solo project, made by <a href="https://www.linkedin.com/in/danny-wakeling1/">Danny Wakeling</a>. It is the final project after the culmination of 12 weeks of studying at Flatiron School's bootcamp. It was created in 2 and a half weeks and showcased on the 11th July in front of a wide audience and open to the public for a few hours.
+This was a solo project, made by <a href="https://www.linkedin.com/in/danny-wakeling1/">Danny Wakeling</a>. It is the final project after the culmination of 12 weeks of studying at Flatiron School's bootcamp. It was created in just over 2 weeks and showcased on the 11th July in front of a wide audience and open to the public for a few hours.
 
 It is a gym supplement app, that seeks to let people record their workouts and see their progression over time.
 
@@ -79,7 +79,6 @@ Currently there is no external API in use. </p>
 <h3> To-do's: </h3>
 <ol>
     <li> Pretty up the graph, add lower bottom and higher top (users were mixed about this)</li>
-    <li> Work on user feedback 4/8</li>
     <li> Background picture of fit good looking people</li>
     <li> Upload progress pictures</li>
     <li> Add youtube video to each suggested exercise</li>
@@ -93,4 +92,5 @@ Currently there is no external API in use. </p>
     <li> Add a different arrow for up/down workout history, give it a hover effect.</li>
     <li> User feedback - workout history too wordy. </li>
     <li> User feedback - upload picture should be more akin to 'find file from computer' </li>
+    <li> Shorten the amount of info displayed in history</li>
 </ol>

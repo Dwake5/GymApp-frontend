@@ -36,8 +36,9 @@ class BodyWeightForm extends Component {
                         <Form.Input type="tel" name="weight" onChange={this.updateState} min="30" label='Weight (in pounds)' value={this.state.weight}/> 
                         <Form.Input type="date" name="date" onChange={this.updateState} value={this.state.date} max={moment().format("YYYY-MM-DD")} label='Date'/>
                     </Form.Group>
-                    <Button  type='submit'> Submit </Button>
+                    <Button className="noTopMargin" color="green" type='submit'> Submit </Button>
                 </Form>
+                <br />
             </div>
         );
     }

@@ -149,9 +149,7 @@ class TrackWorkout extends Component {
               content="Do another exercise"
             />
             <div style={{display: 'flex', justifyContent: 'center'}}>
-            <Button
-              // style={{ marginLeft: this.butMargin }}
-              
+            <Button              
               type="submit"
               color="green"
               size="big"

@@ -9,7 +9,9 @@ class WeightChart extends Component {
                 {
                     label:'Body Weight over Time',
                     data:
-                        this.props.weights.map(weight => weight.weight)
+                        this.props.weights.map(weight => weight.weight),
+                    backgroundColor: 'rgba(183, 99, 194, 0.2)',
+                    borderColor: 'rgba(147, 78, 156)'
                 }
             ]
         }
@@ -19,6 +21,7 @@ class WeightChart extends Component {
         return (
             <>
                 <Line 
+                    id="graph"
                     data={this.getChartData()}
                     options={{}}
                     redraw

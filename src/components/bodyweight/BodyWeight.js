@@ -10,15 +10,14 @@ class BodyWeight extends Component {
     }
 
     getAllUsersWeights = () => {
-
-            getWeights()
-            .then(data => {
-                if (data.error) {
-                console.log(data.error)
-                } else {
-                    this.setState({weights: data})
-                }
-            })    
+        getWeights()
+        .then(data => {
+            if (data.error) {
+            console.log(data.error)
+            } else {
+                this.setState({weights: data})
+            }
+        })    
     }
 
     componentDidMount = () => {
@@ -45,14 +44,13 @@ class BodyWeight extends Component {
         }
     }
 
-    
     render() {
         let lastWeight = 0
         return (
             <div>
                 <h2 style={{marginTop: 0}}> Body Weight History</h2>
                 {this.props.username && <BodyWeightForm username={this.props.username} weightUpdate={this.updateWeightState}/> }
-                {this.props.username && <table>
+                {this.props.username && <table >
                     <tbody id="weightTable">
                         {this.state.weights.length > 0 && <tr>
                             <th>Weight</th>

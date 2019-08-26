@@ -7,8 +7,7 @@ class SignInForm extends Component {
     password: ""
   };
 
-  handleSubmit = event => {
-    event.preventDefault()
+  signIn = () => {
     signin(this.state.username, this.state.password).then(data => {
       if (data.error) {
         alert(data.error);
@@ -17,7 +16,19 @@ class SignInForm extends Component {
         this.props.history.push('/')
       }
     });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+    this.signIn()
   };
+
+  quickSignIn = () => {
+    this.setState({
+      username: 'Guest',
+      password: '1guest2'
+    }, () =>  this.signIn()
+  )}
 
   updateState = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -53,6 +64,13 @@ class SignInForm extends Component {
           {" "}
           Sign In{" "}
         </button>
+        <br />
+        <br />
+        <div id="border" onClick={this.quickSignIn}>
+          <h3 id="recruiter"> Recruiters and Guests </h3>
+          <p id="removeBotMargin"> Click here for quick sign-in</p>
+          <p> on a guest account</p>
+        </div>
       </form>
     );
   }

@@ -71,7 +71,8 @@ code {
   transition: 0.3s;
   border-radius: 5px;
   padding: 15px;
-  max-width: 30%;
+  max-width: 250px;
+  min-width: 200px;
   max-height: 30%;
   margin: 10px;
 }
@@ -117,6 +118,7 @@ a > h3:hover, a > h1:hover {
   padding-top: 30px;
 }
 
+/* Workout button */
 .ui.button {
   height: 2.5em;
   margin-top: 25px
@@ -140,8 +142,8 @@ a > h3:hover, a > h1:hover {
 }
 
 /* Concats set forms */
-div#lift-form-0.equal.width.fields.setsForm {
-  margin-bottom: 0px
+.width.fields.setsForm  {
+  margin-bottom: 0px;
 }
 
 #workoutForm {
@@ -184,10 +186,33 @@ img#avatar {
 }
 
 #workoutCard {
-  text-align:center
+  text-align: center
 }
 
 .field:not(:first-child) > .exercise {
   padding-top: 1rem;
   border-top: rgb(153, 153, 153) solid 1px;
+}
+
+/* Sets entire background color of app */
+body {
+    background-color: #d3d3d3;
+}
+
+/* User details form button */
+button.ui.red.mini { 
+  float: right;
+  margin-top: 0px
+}
+
+button.dropDown {
+  width: 20px;
+}
+
+img.dropDownImg {
+  margin-left: -7px
+}
+
+button.dropDown:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -29,8 +29,8 @@ class HomePage extends React.Component {
       {
         this.props.username &&
           <>
-            <UserDetails username={this.props.username}/>
             {this.state.showForm ? <UserDetailsForm username={this.props.username} closeForm={this.closeForm}/> : <button onClick={this.toggleForm}> Update your profile </button> }
+            <UserDetails username={this.props.username}/>
           </>
       }
       </div>

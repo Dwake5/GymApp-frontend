@@ -92,7 +92,7 @@ class UserDetails extends Component {
         return (
             <div>
                 {name ? <h1> {this.capitalize(name)} </h1> : null }
-                {img ? <img src={img} id='profilePic' width="250" alt=""/> : <img src={anon} id='profilePic' width="250" alt=""/> }
+                {img ? <img src={img} id='profilePic' width="200" alt=""/> : <img src={anon} id='profilePic' width="200" alt=""/> }
                 {gender ? <p> Gender: {gender} </p> : null   }
                 {goal ? <p> Main goal: {goal} </p> : null }
                 {height ? <p> Height (in cm's): {height}</p> : null }

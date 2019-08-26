@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { patchUserDetails } from '../../services/api';
+import {  Button } from 'semantic-ui-react'
 
 class UserDetailsForm extends Component {
     state = {
@@ -102,6 +103,7 @@ class UserDetailsForm extends Component {
                     </label>  */}
                     <br />
                     <button> Submit </button>
+                    <Button className="closeButton" size="mini" basic color='red' icon='x' /> 
                 </form>
             </div>
         );

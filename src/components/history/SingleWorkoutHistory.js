@@ -28,8 +28,8 @@ class SingleWorkoutHistory extends Component {
             <>
                 <div className="container historyNames" style={{display: 'flex', justifyContent: 'center'}}>
                     <h3 className="exerciseDates"> Workout done on {date ? this.dateFormat(date) : null}</h3> 
-                    {this.state.showWorkout ? <button onClick={this.toggleWorkout}> ↑ </button> :
-                    <button onClick={this.toggleWorkout}> ↓ </button> }
+                    {this.state.showWorkout ? <button className="dropDown" onClick={this.toggleWorkout}> <img className="dropDownImg" width="18" src={require('../../images/dropup.png')} /> </button> :
+                    <button className="dropDown" onClick={this.toggleWorkout}> <img className="dropDownImg" width="18" src={require('../../images/dropdown.png')} /> </button> }
                 </div>
                 <div>
                     {this.state.showWorkout && this.generateExcercises(exercises)}

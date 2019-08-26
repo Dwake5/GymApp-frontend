@@ -74,6 +74,9 @@ Currently there is no external API in use. </p>
     <li>Bug: If you press reload on history page, it doesnt show them</li>
     <li> Reformatted date on workout history, now more user friendly</li> 
     <li> Added in a random message for workout confirmation</li> 
+    <li> Uniformly concatinated Workout form</li> 
+    <li> Shortened the amount of info displayed in history</li>
+    <li> Changed workout history arrows and gave them hovers</li>
 </ol>
 
 <h3> To-do's: </h3>
@@ -90,7 +93,6 @@ Currently there is no external API in use. </p>
     <li> Styling (save till last probably) (always in progress)</li>
     <li> Allow users to name or in some way show on workout history what the workout was (chest/pull/legs etc) </li>
     <li> Add a different arrow for up/down workout history, give it a hover effect.</li>
-    <li> User feedback - workout history too wordy. </li>
     <li> User feedback - upload picture should be more akin to 'find file from computer' </li>
-    <li> Shorten the amount of info displayed in history</li>
+    <li>Bug: If on workout form, you click next exercise then delete all sets from previous exercise can not submit form.</li>
 </ol>

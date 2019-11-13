@@ -22,12 +22,12 @@ class App extends Component {
 
   signin = user => {
     this.setState({ username: user.username });
-    localStorage.setItem('token', user.token)
+    localStorage.setItem("token", user.token);
   };
 
   signout = () => {
     this.setState({ username: "" });
-    localStorage.removeItem('token')
+    localStorage.removeItem("token");
   };
 
   componentDidMount() {
@@ -47,37 +47,44 @@ class App extends Component {
     const { username } = this.state;
     return (
       <div>
-        <Nav username={username} signout={signout}/>
-          <Container>
-        <Switch>
-          <Route exact path="/" render={props => <HomePage signout={signout} username={username} {...props}/>} />
-          <Route
-            path="/signin"
-            render={props => <SignInForm signin={signin} {...props} />}
-          />
-          <Route
-            path="/signup"
-            render={props => <SignUpForm signin={signin} {...props} />}
-          />
-          <Route
-            path="/signup2"
-            render={props => <SignUpForm2 signin={signin} {...props} />}
-          />
-          <Route
-            path="/newWorkout"
-            render={props => <TrackWorkout {...props} username={username} />}
-          />
-          <Route
-            path="/workoutHistory"
-            render={props => <WorkoutHistory {...props} username={username} />}
-          />
-          <Route
-            path="/bodyWeight"
-            render={props => <BodyWeight {...props} username={username} />}
-          />
-          <Route render={() => <h1>Page not found.</h1>} 
-          />
-        </Switch>
+        <Nav username={username} signout={signout} />
+        <Container>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <HomePage signout={signout} username={username} {...props} />
+              )}
+            />
+            <Route
+              path="/signin"
+              render={props => <SignInForm signin={signin} {...props} />}
+            />
+            <Route
+              path="/signup"
+              render={props => <SignUpForm signin={signin} {...props} />}
+            />
+            <Route
+              path="/signup2"
+              render={props => <SignUpForm2 signin={signin} {...props} />}
+            />
+            <Route
+              path="/newWorkout"
+              render={props => <TrackWorkout {...props} username={username} />}
+            />
+            <Route
+              path="/workoutHistory"
+              render={props => (
+                <WorkoutHistory {...props} username={username} />
+              )}
+            />
+            <Route
+              path="/bodyWeight"
+              render={props => <BodyWeight {...props} username={username} />}
+            />
+            <Route render={() => <h1>Page not found.</h1>} />
+          </Switch>
         </Container>
       </div>
     );

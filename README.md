@@ -3,7 +3,7 @@
 
 This is the frontend project, which controls how data is presented on the page, html is layed out and css looks. 
 
-Its sister project can be found at <a href="https://github.com/Dwake5/GymApp-bckend">GymApp-backend</a>.
+Its sister project can be found at <a href="https://github.com/Dwake5/GymApp-backend">GymApp-backend</a>.
 
 <a href="https://kratos-gym-app.herokuapp.com">Now deployed on heroku!</a>
 
